@@ -18,7 +18,7 @@
         let result = [];
 
         for(let i = 0; i < this.items.length; i++) {
-          if (this.items[i].length !== 0) result.push(this.items[i].join(', '))
+          if (this.items[i] && this.items[i].length !== 0) result.push(this.items[i].join(', '))
         }
 
         return result;
